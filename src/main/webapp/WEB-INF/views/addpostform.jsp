@@ -33,7 +33,7 @@
         <tr><td>사용감</td><td><input type="text" name="usefeel"/></td></tr>
         <tr><td>원가</td><td><input type="text" name="originalprice"/></td></tr>
         <tr><td>판매가격</td><td><input type="text" name="saleprice"/></td></tr>
-        <tr><td>판매완료여부</td><td><input type="checkbox" name="soldout"/></td></tr>
+        <tr><td>판매완료여부</td><td><input type="text" name="soldout"/></td></tr>
 
     </table>
     <button type="button" onclick="location.href='list'">목록보기</button>

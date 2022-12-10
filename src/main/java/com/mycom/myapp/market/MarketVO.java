@@ -11,7 +11,7 @@ public class MarketVO {
     private String usefeel;
     private String originalprice;
     private String saleprice;
-    private int soldout;
+    private String soldout;
 
     private Date regdate;
 
@@ -81,11 +81,11 @@ public class MarketVO {
         this.saleprice = saleprice;
     }
 
-    public int getSoldout() {
+    public String getSoldout() {
         return soldout;
     }
 
-    public void setSoldout(int soldout) {
+    public void setSoldout(String soldout) {
         this.soldout = soldout;
     }
 

@@ -5,20 +5,20 @@
 <mapper namespace="Market">
 
     <insert id="insertMarket">
-        insert into MARKET (username, phonenum, category, buydate, usefeel, originalprice, saleprice, soldout)
+        insert into MARKET2 (username, phonenum, category, buydate, usefeel, originalprice, saleprice, soldout)
         values (#{username} , #{phonenum} , #{category} , #{buydate},#{usefeel},#{originalprice},#{saleprice},#{soldout})
     </insert>
     <update id="updateMarket">
-        update MARKET
+        update MARKET2
         set username=#{username}, phonenum=#{phonenum}, category=#{category}, buydate=#{buydate}, usefeel=#{usefeel}, originalprice=#{originalprice}, saleprice=#{saleprice}, soldout=#{soldout} where seq=#{seq}
     </update>
     <delete id="deleteMarket">
-        delete from MARKET where seq=#{seq}
+        delete from MARKET2 where seq=#{seq}
     </delete>
     <select id="getMarket" resultType="market">
-        select * from MARKET where seq=#{seq}
+        select * from MARKET2 where seq=#{seq}
     </select>
     <select id="getMarketList" resultType="market">
-        select * from MARKET order by seq desc
+        select * from MARKET2 order by seq desc
     </select>
 </mapper>
