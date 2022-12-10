@@ -24,7 +24,7 @@
   </script>
 
   <style>
-    #div{
+    #div,#div2{
       font-family:'Do Hyeon',serif;
     }
     #list {
@@ -53,7 +53,6 @@
 <body>
 <h1 id="div">한동인을 위한 중고거래 게시판</h1>
 
-<%--<p><a href="login/login">로그아웃 하기</a></p>--%>
 
 <table id="list" width="90%">
   <tr>
@@ -92,7 +91,9 @@
 
   <br/>
 </table>
+<p id="div2">
 <button type="button" onclick="location.href='add'">새글쓰기</button>
+<a href="login/login"><input type="button" value="로그아웃"></a></p>
 <%--<br/><a href="addpostform.jsp">Add New Post</a>--%>
 
 </body>

@@ -17,7 +17,7 @@ public class MarketController {
 
     @RequestMapping(value="/")
         public String home(){
-        return "redirect:list";
+        return "index";
     }
 
     @RequestMapping(value = "list", method = RequestMethod.GET)
